@@ -2,9 +2,9 @@ import React from "react";
 //import PropTypes from "prop-types";
 const Form = props => {
   return (
-    <form onSubmit={props.getRecipe}>
-      <input type="text" name="recipeName" />
-      <button>Search</button>
+    <form onSubmit={props.getRecipe} style={{ marginBottom: "2rem" }}>
+      <input type="text" className="form__input" name="recipeName" />
+      <button className="form__button">Search</button>
     </form>
   );
 };
