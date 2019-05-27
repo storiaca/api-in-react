@@ -11,15 +11,19 @@ const Recipes = props => {
               key={recipe.recipe_id}
               style={{ marginBottom: "2rem" }}
             >
-              <div className="recipe__box">
+              <div className="recipes__box">
                 <img
                   className="recipe__box-img"
                   src={recipe.image_url}
                   alt={recipe.title}
                 />
                 <div className="recipe__text">
-                  <h5>{recipe.title}</h5>
+                  <h5 className="recipes__title">{recipe.title}</h5>
+                  <p className="recipes__subtitle">
+                    Publisher: <span>{recipe.publisher}</span>
+                  </p>
                 </div>
+                <button className="recipe_button">View Recipe</button>
               </div>
             </div>
           );
