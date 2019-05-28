@@ -7,7 +7,7 @@ import Recipe from "./Recipe";
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route path="/recipe" component={Recipe} />
+      <Route path="/recipe/:id" component={Recipe} />
       <Route path="/" component={App} />
     </Switch>
   </BrowserRouter>
